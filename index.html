@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>HarperAuto</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="script" href="./scripts.js">
+  </head>
+  <body>
+    <div class="main-container center-align">
+        <div class="container">
+          <div class="title center-align">
+            <h2>H . A</h2>
+          </div>
+          <div class="svg-icons">
+            <img src="../assets/images/gardening.svg" alt="Reel mower svg image">
+            <img src="../assets/images/trimmer.svg" alt="String trimmer svg image">
+            <img src="../assets/images/yard.svg" alt="Lawn mower svg image">
+            <img src="../assets/images/grass.svg" alt="Blades of grass">
+            <img src="../assets/images/hedgeTrimmer.svg" alt="Hedge trimmer svg image">
+            <img src="../assets/images/motorcycle.svg" alt="Dude riding a motorcycle">
+            <img src="../assets/images/trailBike.svg" alt="little trail motorcycle">
+          </div>
+          <div class="hr-break green darken-3"></div>
+          <div id="description-section">
+            <div class="about-descriptions" *ngFor="let description of descriptions.data">
+              <div class="description-title">
+                <h4 [innerHTML]=description.title>=""></h4>
+                <div style="border-bottom: 1px black solid; margin: 2px 0;"></div>
+              </div>
+              <h6 [innerHTML]="description.content"></h6>
+            </div>
+          </div>
+          <a href="https://app.acuityscheduling.com/schedule.php?owner=20680843"
+             target="_blank" class="acuity-embed-button">
+            Schedule Appointment
+          </a>
+          <script src="https://embed.acuityscheduling.com/embed/button/20680843.js" async></script>
+          <iframe [ngClass]="(!mapVisible)?'delivery-map-visible' : 'delivery-map-invisible'" class="delivery-map-visible" src="https://www.google.com/maps/d/embed?mid=1fJfj10-UVgfbt21ky0_88zrXQwfwO4sL" frameborder="0"></iframe>
+          <footer>
+            <div class="icons">
+              <div class="icon-phone">
+                <a href="tel:+16365353604"><fa-icon [icon]="faPhone"></fa-icon></a>
+              </div>
+              <h6>|</h6>
+              <div class="icon-location" (click)="openMapToggle()">
+                <fa-icon [icon]="faMapPin"></fa-icon>
+              </div>
+              <h6>|</h6>
+              <div class="icon-mail">
+                <a href="mailto: bradley@harperauto.us"><fa-icon [icon]="faEnvelope"></fa-icon></a>
+              </div>
+            </div>
+          </footer>
+          <div class="sources">
+            <h6>- Sources -</h6>
+            <h6>Icons from Smashicons & Freepik @
+              <a href="https://www.flaticon.com/">Flaticon</a> |
+              <a href="https://fontawesome.com">Font&nbsp;Awesome</a> |
+              <a href="https://linode.com/">Linode</a> |
+              <a href="https://apache.org">Apache2</a>
+            </h6>
+          </div>
+          <small>
+            Made by Bradley
+            <a href="https://github.com/BradleyHarper">Github</a> |
+            <a href="https://www.linkedin.com/in/bradley-harper-78451a73/">LinkedIn</a> |
+            <a href="https://bradleyharper.me/">Website</a>
+            v1.0
+          </small>
+          <br>
+        </div>
+      </div>
+  </body>
+</html>

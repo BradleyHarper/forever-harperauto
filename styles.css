@@ -1,0 +1,200 @@
+@media screen and (min-width: 750px) {
+  .about-descriptions:nth-of-type(3n+2) {
+    position: relative;
+    left: 50px;
+  }
+
+  .about-descriptions:nth-of-type(3n+3) {
+    position: relative;
+    right: 100px;
+  }
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  border-top: 2px solid #2E7D32;
+  border-bottom: 2px solid #2E7D32;
+}
+
+h6 {
+  word-spacing: 3px;
+  line-height: inherit;
+}
+
+small {
+  font-weight: 300;
+}
+
+#description-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  word-break: break-word;
+}
+
+.about-descriptions {
+  max-width: 500px;
+  margin: 50px 0;
+}
+
+.description-title {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.description-title > h4 {
+  font-weight: 100;
+  margin-bottom: 0;
+}
+
+.about-descriptions > h6 {
+  font-weight: 300;
+}
+
+.acuity-embed-button {
+  background: whitesmoke;
+  color: black;
+  padding: 8px 12px;
+  border: 2px solid #2E7D32;
+  border-radius: 4px;
+  margin: 10px 0;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Roboto, monospace;
+  font-weight: 300;
+}
+
+.acuity-embed-button:hover{
+  border: 2px solid black;
+}
+
+.container {
+  max-width: 800px;
+}
+
+.delivery-map-invisible {
+  opacity: 0.0 !important;
+  position: fixed;
+}
+
+.delivery-map-visible {
+  width: 100%;
+  height: 400px;
+  margin: 20px 0;
+}
+
+.grass-image > img {
+  width: 100%;
+  opacity: 0.2;
+}
+
+.hr-break {
+  height: 2px;
+  width: 100%;
+  margin-top: 0;
+}
+
+.icon-phone, .icon-location, .icon-mail{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-phone:hover, .icon-mail:hover, .icon-location:hover, .acuity-embed-button:hover {
+  border-bottom: 2px solid black;
+}
+
+.icon-location > fa-icon {
+  color: #039be5;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  font-weight: 300;
+  width: 100%;
+}
+
+.icons > div > p:hover, .icons > div > a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.main-container {
+  height: auto;
+  width: auto;
+  background-color: whitesmoke;
+}
+
+.ng-fa-icon {
+  padding: 0 20px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  max-width: 650px;
+  margin: 0 auto 20px auto;
+}
+
+.title > h2 {
+  font-weight: 200;
+}
+
+.svg-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: -3px;
+}
+
+/* //Positioning svg's so they just touch the top of the grass line. */
+.svg-icons > img:nth-child(2) {
+  position: relative;
+  top: -3px;
+}
+
+.svg-icons > img:nth-child(3) {
+  position: relative;
+  top: -1px;
+}
+
+.svg-icons > img:nth-child(4) {
+  position: relative;
+  top: -2px !important;
+}
+
+.svg-icons > img:nth-child(1), .svg-icons > img:nth-child(5), .svg-icons > img:nth-child(6) {
+  position: relative;
+  top: -2px;
+}
+
+.sources {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.sources > h6 {
+  font-weight: 300;
+}
+
+.sources > h6 > a:hover {
+  text-decoration: underline;
+}
+
+.sources-button-container {
+  padding: 20px;
+}
+
+.svg-icons > img {
+  height: 30px;
+  width: 30px;
+}
+
+.ng-fa-icon {
+  font-size: 30px;
+}
