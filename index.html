@@ -13,85 +13,81 @@
             <h2>H . A</h2>
           </div>
           <div class="svg-icons">
-            <img src="../assets/images/gardening.svg" alt="Reel mower svg image">
-            <img src="../assets/images/trimmer.svg" alt="String trimmer svg image">
-            <img src="../assets/images/yard.svg" alt="Lawn mower svg image">
-            <img src="../assets/images/grass.svg" alt="Blades of grass">
-            <img src="../assets/images/hedgeTrimmer.svg" alt="Hedge trimmer svg image">
-            <img src="../assets/images/motorcycle.svg" alt="Dude riding a motorcycle">
-            <img src="../assets/images/trailBike.svg" alt="little trail motorcycle">
+            <img src="./assets/images/gardening.svg" alt="Reel mower svg image">
+            <img src="./assets/images/trimmer.svg" alt="String trimmer svg image">
+            <img src="./assets/images/yard.svg" alt="Lawn mower svg image">
+            <img src="./assets/images/grass.svg" alt="Blades of grass">
+            <img src="./assets/images/hedgeTrimmer.svg" alt="Hedge trimmer svg image">
+            <img src="./assets/images/motorcycle.svg" alt="Dude riding a motorcycle">
+            <img src="./assets/images/trailBike.svg" alt="little trail motorcycle">
           </div>
-          <div class="hr-break green darken-3"></div>
-          
-          <h4>About Harper Auto</h4>
-          <h6>Hello! My name is Bradley Harper and I'm a professional small engine mechanic offering on-site small engine repair. My goal is to have you fully aware of the repair process, perform a quality repair,
-          and provide a same-day diagnosis.</h6>
-
-          <h4>Equipment</h4>
-          <h6></h6>
-
-          <h4>Pricing</h4>
-          <h6></h6>
-
-          <h4>Repair Types</h4>
-          <h6></h6>
-
-          <h4>Location</h4>
-          <h6></h6>
-
-          <h4>Quote & Appointment</h4>
-          <h6></h6>
-
-          <h4>Questions</h4>
-          <h6></h6>
-
+          <div class="hr-break"></div>
           
           <div id="description-section">
-            <div class="about-descriptions" *ngFor="let description of descriptions.data">
-              <div class="description-title">
-                <h4 [innerHTML]=description.title>=""></h4>
-                <div style="border-bottom: 1px black solid; margin: 2px 0;"></div>
-              </div>
-              <h6 [innerHTML]="description.content"></h6>
+            <div class="about-descriptions">
+              <h4>About Harper Auto</h4>
+              <h6>
+                Hello! My name is Bradley Harper and I'm a professional small engine mechanic offering on-site small engine repair. My goal is to have you fully aware of the repair process, perform a quality repair,
+              and provide a same-day diagnosis.
+              </h6>
+
+              <h4>Equipment</h4>
+              <h6>
+                I repair anything with a pull cord. From brands ranging from Toro, Stihl, Redmax, Briggs and Stratton, Honda, Craftsman, and more.
+              </h6>
+
+              <h4>Pricing</h4>
+              <h6>
+                On booking you\'ll see my rate per hour(s). If the job only takes an hour, you pay an hour. The final bill will have the cost of parts included.
+              </h6>
+
+              <h4>Repair Types</h4>
+              <h6>
+                Hard to start hand held equipment / push mower wearing out your shoulder? Self propelled drive on push mower not working anymore?
+              I'm also open to helping to help finish a project, maybe we could both learn a thing or two!
+              </h6>
+
+              <h4>Location</h4>
+              <h6>
+                To make sure I\'m close enough to you, click on the map pin icon at the bottom of the website.
+              If you're not too far away from my residence but out of the service zone on the map give me a call.
+              </h6>
+
+              <h4>Quote & Appointment</h4>
+              <h6>
+                If you have any questions to ask me directly via phone or book a time for me to come help with your small engine needs.
+              I will follow up with a phone call if you schedule an appointment to see if my services would be the best for you.
+              </h6>
+
+              <h4>Questions</h4>
+              <h6>
+                Feel free to reach out via phone or email located below. This is the first rendition of the website, If you find errors please let me know. Thank you!
+              </h6>
             </div>
           </div>
 
-          <a href="https://app.acuityscheduling.com/schedule.php?owner=20680843"
-             target="_blank" class="acuity-embed-button">
-            Schedule Appointment
-          </a>
-          <script src="https://embed.acuityscheduling.com/embed/button/20680843.js" async></script>
-          <iframe [ngClass]="(!mapVisible)?'delivery-map-visible' : 'delivery-map-invisible'" class="delivery-map-visible" src="https://www.google.com/maps/d/embed?mid=1fJfj10-UVgfbt21ky0_88zrXQwfwO4sL" frameborder="0"></iframe>
           <footer>
             <div class="icons">
               <div class="icon-phone">
-                <a href="tel:+16365353604"><fa-icon [icon]="faPhone"></fa-icon></a>
+                <a href="tel:+16365353604"><img src="./assets/svg/phone.svg" alt="phone svg image">
               </div>
               <h6>|</h6>
               <div class="icon-location" (click)="openMapToggle()">
-                <fa-icon [icon]="faMapPin"></fa-icon>
+                <img src="./assets/svg/map-pin.svg" alt="map pin svg image">
               </div>
               <h6>|</h6>
               <div class="icon-mail">
-                <a href="mailto: bradley@harperauto.us"><fa-icon [icon]="faEnvelope"></fa-icon></a>
+                <a href="mailto: bradley@harperauto.us">
+                <img src="./assets/svg/envelope.svg" alt="envelope or mail svg image">
               </div>
             </div>
           </footer>
-          <div class="sources">
-            <h6>- Sources -</h6>
-            <h6>Icons from Smashicons & Freepik @
-              <a href="https://www.flaticon.com/">Flaticon</a> |
-              <a href="https://fontawesome.com">Font&nbsp;Awesome</a> |
-              <a href="https://linode.com/">Linode</a> |
-              <a href="https://apache.org">Apache2</a>
-            </h6>
-          </div>
           <small>
-            Made by Bradley
+            Made by Bradley | 
             <a href="https://github.com/BradleyHarper">Github</a> |
             <a href="https://www.linkedin.com/in/bradley-harper-78451a73/">LinkedIn</a> |
-            <a href="https://bradleyharper.me/">Website</a>
-            v1.0
+            <a href="https://bradleyharper.me/">Website</a> |
+            v2.0
           </small>
           <br>
         </div>

@@ -1,13 +1,18 @@
 @media screen and (min-width: 750px) {
-  .about-descriptions:nth-of-type(3n+2) {
+  .about-descriptions > h6:nth-of-type(3n+2) {
     position: relative;
     left: 50px;
   }
 
-  .about-descriptions:nth-of-type(3n+3) {
+  .about-descriptions > h6:nth-of-type(3n+3) {
     position: relative;
-    right: 100px;
+    right: 50px;
   }
+}
+
+body {
+  text-align: center;
+    font-family: Roboto, monospace;
 }
 
 footer{
@@ -51,6 +56,7 @@ small {
 
 .about-descriptions > h6 {
   font-weight: 300;
+  font-size: 20px;
 }
 
 .acuity-embed-button {
@@ -94,6 +100,7 @@ small {
   height: 2px;
   width: 100%;
   margin-top: 0;
+  background-color:#2E7D32;
 }
 
 .icon-phone, .icon-location, .icon-mail{
@@ -103,11 +110,7 @@ small {
 }
 
 .icon-phone:hover, .icon-mail:hover, .icon-location:hover, .acuity-embed-button:hover {
-  border-bottom: 2px solid black;
-}
-
-.icon-location > fa-icon {
-  color: #039be5;
+  border-bottom: 2px solid #2E7D32;
 }
 
 .icons {
@@ -123,14 +126,16 @@ small {
   text-decoration: underline;
 }
 
+.icons > div > img {
+  height: 20px;
+}
+
 .main-container {
+  display: flex;
+  justify-content: center;
   height: auto;
   width: auto;
   background-color: whitesmoke;
-}
-
-.ng-fa-icon {
-  padding: 0 20px;
 }
 
 .title {
@@ -193,8 +198,4 @@ small {
 .svg-icons > img {
   height: 30px;
   width: 30px;
-}
-
-.ng-fa-icon {
-  font-size: 30px;
 }
