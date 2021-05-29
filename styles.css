@@ -1,10 +1,10 @@
 @media screen and (min-width: 750px) {
-  .about-descriptions > h6:nth-of-type(3n+2) {
+  .about-descriptions > h6:nth-of-type(3n+2), .about-descriptions > h4:nth-of-type(3n+2) {
     position: relative;
     left: 50px;
   }
 
-  .about-descriptions > h6:nth-of-type(3n+3) {
+  .about-descriptions > h6:nth-of-type(3n+3), .about-descriptions > h4:nth-of-type(3n+3) {
     position: relative;
     right: 50px;
   }
@@ -59,23 +59,6 @@ small {
   font-size: 20px;
 }
 
-.acuity-embed-button {
-  background: whitesmoke;
-  color: black;
-  padding: 8px 12px;
-  border: 2px solid #2E7D32;
-  border-radius: 4px;
-  margin: 10px 0;
-  text-decoration: none;
-  display: inline-block;
-  font-family: Roboto, monospace;
-  font-weight: 300;
-}
-
-.acuity-embed-button:hover{
-  border: 2px solid black;
-}
-
 .container {
   max-width: 800px;
 }
@@ -103,14 +86,23 @@ small {
   background-color:#2E7D32;
 }
 
+.icon-location > img {
+  height: 20px;
+}
+
+.icons > div > a > img {
+  height: 30px;
+}
+
+.icon-location > h6 {
+  margin: 0;
+}
+
 .icon-phone, .icon-location, .icon-mail{
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.icon-phone:hover, .icon-mail:hover, .icon-location:hover, .acuity-embed-button:hover {
-  border-bottom: 2px solid #2E7D32;
+  flex-direction: column;
 }
 
 .icons {
@@ -119,15 +111,6 @@ small {
   flex-direction: row;
   font-weight: 300;
   width: 100%;
-}
-
-.icons > div > p:hover, .icons > div > a:hover {
-  cursor: pointer;
-  text-decoration: underline;
-}
-
-.icons > div > img {
-  height: 20px;
 }
 
 .main-container {
@@ -147,6 +130,7 @@ small {
 
 .title > h2 {
   font-weight: 200;
+  font-size: xx-large;
 }
 
 .svg-icons {
@@ -175,24 +159,6 @@ small {
 .svg-icons > img:nth-child(1), .svg-icons > img:nth-child(5), .svg-icons > img:nth-child(6) {
   position: relative;
   top: -2px;
-}
-
-.sources {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.sources > h6 {
-  font-weight: 300;
-}
-
-.sources > h6 > a:hover {
-  text-decoration: underline;
-}
-
-.sources-button-container {
-  padding: 20px;
 }
 
 .svg-icons > img {
